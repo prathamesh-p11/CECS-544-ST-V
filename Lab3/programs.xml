@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.0
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Feb 07, 2020 at 03:36 AM
+- Server version: 10.1.31-MariaDB
+- PHP Version: 7.2.4
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="bughound" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="programs">
+                CREATE TABLE `programs` (
+                  `prog_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `program` varchar(32) NOT NULL,
+                  `program_release` varchar(32) NOT NULL,
+                  `program_version` varchar(16) NOT NULL,
+                  PRIMARY KEY (`prog_id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+</pma_xml_export>
